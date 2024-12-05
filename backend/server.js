@@ -22,10 +22,8 @@ app.use('/api/items', itemRoutes);
 
 
 
-
-
-
 // server runnig put
 const port = process.env.PORT || 8080;
+const SECRET_KEY = process.env.SECRET_KEY;
 app.listen(port, () => console.log(`Server run http://localhost:${port}`));
 
