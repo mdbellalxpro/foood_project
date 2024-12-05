@@ -1,0 +1,39 @@
+/* Styles for the Item component */
+.item {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .item-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .item-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .item-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .item-detailed {
+    text-align: left;
+  }
+  
+  .item-detailed img {
+    margin-bottom: 20px;
+  }
+  
