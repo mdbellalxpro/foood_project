@@ -9,8 +9,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-
-
 // Access the environment variable
 const uri = process.env.MONGO_URI;
 
@@ -23,19 +21,10 @@ mongoose.connect(uri)
     console.error("Error connecting to MongoDB:", err);
 });
 
-// Example schema and model
-const exampleSchema = new mongoose.Schema({
-    name: String,
-    age: Number
-});
-
-
-// Use routes
+// Use routes 
 app.use('/api/items', itemRoutes);
-
 
 // server runnig put
 const port = process.env.PORT || 8080;
-
 app.listen(port, () => console.log(`Server run http://localhost:${port}`));
 
