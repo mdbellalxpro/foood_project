@@ -1,45 +1,33 @@
 
-.product-menu .item .product-type,
-.product-menu .short-by .product-type{
+.product-menu {
+    margin: 30px 62px;
     display: flex;
-    gap: 10px;
-    align-items: center;
-    background-color: #695e5e1b;
-    height: 30px;
-    padding: 5px 20px;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .3s ease;
-    justify-content: space-between;
+    justify-content:space-between ;
+    gap: 20px;
 }
 
-.product-menu {
+.product-menu .product-type {
+    border: 1px solid #55555544;
     display: flex;
-    margin: 30px 62px;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.product-menu .short-by .product-type {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 
 .product-menu .item {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    width: 600px;
 }
 
-.product-menu .product-type:hover {
-    background-color: #695e5e2a;
-}
-
-.product-type .arrow {
-    font-size: 14px;
-}
-
-.product-type h3 {
-    font-size: 13px;
-    font-family: sans-serif;
-}
 
 /*=========== product-menu responsive desing ========== */
 
@@ -50,34 +38,25 @@
 }
 
 @media (max-width:901px) {
-    .product-menu .item {
-        overflow-y: auto;
-        visibility: visible;
-        height: 50px;
-    }
-
-    .item .product-type:nth-child(1){
-        min-width: 130px;
-    }
-
-    .item .product-type:nth-child(6){
-        min-width: 130px;
-    }
-
     .product-type h3 {
         font-size: 11px;
     }
+   
 }
 
 @media (max-width:767px) {
+
     .product-menu {
-        margin-left: 20px;
-        width: 94%
+       margin: 20px 25px;
+    }
+
+    .product-menu .item {
+        width: 100%;
+    }
+
+    .short-by {
+        margin-top: -20px;
+
     }
 }
-@media (max-width:448px) {
-    .product-menu {
-        margin-left: 20px;
-        width: 90%
-    }
-}
+

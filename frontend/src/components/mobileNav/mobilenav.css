@@ -11,23 +11,22 @@
         width: 100%;
         background: #064e3b;
         height: 60px;
-        padding: 0px 30px;
+        padding: 0px 20px;
         box-shadow: 5px 5px 5px #55555533, -5px -5px 5px #55555530; 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+       
         z-index: 300;
     }
 
     .phone .product-count {
         display: flex;
         justify-content: center;
-        margin-top: 4px;
+        margin-top: 10px;
     }
 
     .phone .product-count .product-item {
         position: absolute;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -41,7 +40,7 @@
     .phone ul {
         display: flex;
         justify-content: space-between;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .phone ul li a .mobile-icon {
@@ -50,7 +49,5 @@
         width: 30px;
     }
  
- 
-
 }
 
