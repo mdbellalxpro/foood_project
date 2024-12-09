@@ -1,4 +1,5 @@
 // react state
+
 import { useState } from "react";
 
 // React icon
@@ -14,6 +15,7 @@ import Account from "../account/account.jsx";
 import SearchBar from "../searchResult/result.jsx";
 
 import "./navbar.css";
+import { Link } from "react-router-dom";
 const navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -32,16 +34,16 @@ const navbar = () => {
           </div>
 
           <div className="logo">
-            <a href="#">
+            <Link to="/">
               <img src={Logo} alt="" />
-            </a>
+            </Link>
           </div>
 
           <ul className="ul-menu flex gap-10">
             <li>
-              <a href="#" className="active">
+              <Link to="/" className="active">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li>

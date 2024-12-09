@@ -11,7 +11,7 @@ const store = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/items/products")
+      .get("https://foood-project-backend.onrender.com/api/items/products")
       .then((response) => setProducts(response.data))
       .catch((err) => console.error(err));
   }, []);

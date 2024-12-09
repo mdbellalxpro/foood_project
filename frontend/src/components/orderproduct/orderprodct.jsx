@@ -12,7 +12,7 @@ const orderprodct = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/items/products/${productId}`)
+      .get(`https://foood-project-backend.onrender.com/api/items/products/${productId}`)
       .then((response) => setProduct(response.data))
       .catch((error) => console.error(error));
   }, [productId]);
