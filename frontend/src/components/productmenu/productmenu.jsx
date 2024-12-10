@@ -29,12 +29,12 @@ const productmenu = () => {
     <>
       <div className="product-menu">
         <OwlCarousel className="item" {...options} >
-          <a href="#berger">
+       
             <div className="product-type">
               <h3>Berger</h3>
               <IoIosArrowDown className="arrow" />
             </div>
-          </a>
+          
 
           <a href="#store">
             <div className="product-type">

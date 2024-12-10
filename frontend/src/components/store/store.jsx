@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 
 import "./store.css";
 const store = () => {
-  const [products, setProducts] = useState([]);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [products, setProducts] = useState([])
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
       .get("https://foood-project-backend.onrender.com/api/items/products")
@@ -50,7 +52,7 @@ const store = () => {
                 </Link>
               </div>
             </div>
-           ))};
+           ))} 
         </div>
       </div>
 
@@ -86,7 +88,7 @@ const store = () => {
                 </Link>
               </div>
             </div>
-           ))};
+           ))} 
         </div>
       </div>
 
@@ -122,7 +124,7 @@ const store = () => {
                 </Link>
               </div>
             </div>
-           ))};
+           ))} 
         </div>
       </div>
 

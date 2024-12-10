@@ -5,6 +5,7 @@ import OrderingProduct from "../../components/orderproduct/orderprodct";
 import ProductPyment from "../../components/orderPyment/orderPymt";
 import RelatedProduct from "../../components/relatedproduct/relatetedP.jsx";
 import Mobile from "../../components/mobileNav/mobilenav.jsx";
+import Mininav from "../../components/navbarmini/navbarmini.jsx";
 
 import "./order.css";
 const order = () => {
@@ -13,6 +14,7 @@ const order = () => {
    <>
    
    <div className="order-container">
+      <Mininav/>
       <Navbar/>
       <Mobile/>
       <div className="order">

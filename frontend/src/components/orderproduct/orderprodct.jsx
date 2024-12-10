@@ -7,14 +7,17 @@ import Category from "../../components/category/category";
 
 import "./orderproduct.css";
 const orderprodct = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { productId } = useParams();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [product, setProduct] = useState(null);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
       .get(`https://foood-project-backend.onrender.com/api/items/products/${productId}`)
       .then((response) => setProduct(response.data))
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error))
   }, [productId]);
 
   if (!product) {

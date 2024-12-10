@@ -1,6 +1,6 @@
 // react state
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // React icon
 import { MdAccountCircle } from "react-icons/md";
@@ -17,6 +17,7 @@ import SearchBar from "../searchResult/result.jsx";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 const navbar = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle the dropdown open/close state
@@ -24,10 +25,31 @@ const navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 5) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="navbar-container">
-        <div className="nav">
+        <div  className={`nav ${isScrolled ? "scrolled" : ""}`}>
           
           <div className="input2">
             <SearchBar />

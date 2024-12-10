@@ -7,12 +7,14 @@
 }
 
 .product-menu .product-type {
-    border: 1px solid #55555544;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 3px 10px;
+    background-color: #55555516;
+    border: 1px solid #5555551b;
     border-radius: 5px;
+
 }
 
 .product-menu .short-by .product-type {
@@ -22,6 +24,7 @@
     gap: 30px;
     padding: 5px 20px;
     border-radius: 5px;
+    z-index: 300;
 }
 
 .product-menu .item {
@@ -58,5 +61,6 @@
         margin-top: -20px;
 
     }
+    
 }
 

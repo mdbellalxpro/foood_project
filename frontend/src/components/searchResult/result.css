@@ -39,7 +39,7 @@
 }
 
 .results-list {
-  height: 400px;
+  height: 250px;
   position: absolute;
   margin-top: 6px;
   z-index: 300;
