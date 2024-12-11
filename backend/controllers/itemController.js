@@ -1,17 +1,16 @@
-
 // controllers/itemController.js
-const Item = require('../models/item.js');
+const Item = require("../models/item.js");
 
 // Search function
 const searchItems = async (req, res) => {
   const query = req.query.q;
   try {
     const items = await Item.find({
-      name: { $regex: query, $options: 'i' },
+      name: { $regex: query, $options: "i" },
     });
     res.json(items);
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    res.status(500).json({ message: "Server Error" });
   }
 };
 
@@ -41,7 +40,7 @@ const productShop = async (req, res) => {
   try {
     const product = await Item.findById(req.params.id);
     if (!product) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: "Product not found" });
     }
     res.json(product);
   } catch (error) {
@@ -49,11 +48,9 @@ const productShop = async (req, res) => {
   }
 };
 
-
-
-
-
-
-
-
-module.exports = { searchItems, postProduct, orderProduct, productShop,};
+module.exports = {
+  searchItems,
+  postProduct,
+  orderProduct,
+  productShop,
+};
