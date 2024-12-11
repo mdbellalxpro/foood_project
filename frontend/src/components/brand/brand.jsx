@@ -6,11 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 // carousel image 
-import Image1 from "../../images/barger1.jpg";
-import Image2 from "../../images/barger2.jpg";
-import Image3 from "../../images/barger3.jpg";
-import Image4 from "../../images/barger4.jpg";
-import Image5 from "../../images/pizza3.jpg";
+
 
 import "./brand.css";
 const brand = () => {
@@ -35,20 +31,25 @@ const brand = () => {
         <div>
           <OwlCarousel {...options}>
             <div className="item">
-              <img src={Image1} alt="" />
+             <img src="https://i.ibb.co.com/SwyRKQf/barger1.jpg" alt="" />
             </div>
+
             <div className="item">
-              <img src={Image2} alt="" />
+             <img src="https://i.ibb.co.com/sFWhc5b/barger2.jpg" alt="" />
             </div>
+
             <div className="item">
-              <img src={Image3} alt="" />
+              <img src="https://i.ibb.co.com/dg2CC1X/pizza3.jpg" alt="" />
             </div>
+
             <div className="item">
-              <img src={Image4} alt="" />
+             <img src="https://i.ibb.co.com/mc9qS2h/barger3.jpg" alt="" />
             </div>
+
             <div className="item">
-              <img src={Image5} alt="" />
+             <img src="https://i.ibb.co.com/tmP9bM6/barger4.jpg" alt="" />
             </div>
+            
           </OwlCarousel>
         </div>
 
