@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
@@ -7,22 +8,6 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-// image import 
-import Pizza1 from "../../images/pizza1.jpg"
-import Pizza2 from "../../images/pizza2.jpg"
-import Pizza3 from "../../images/pizza3.jpg"
-import Pizza4 from "../../images/pizza4.jpg"
-
-import Berger1 from "../../images/barger1.jpg"
-import Berger2 from "../../images/barger2.jpg"
-import Berger3 from "../../images/barger3.jpg"
-import Berger4 from "../../images/barger4.jpg"
-
-import Briyani from "../../images/briyani.jpeg"
-import Briyani1 from "../../images/briyani1.jpeg"
-import Briyani2 from "../../images/briyani2.jpeg"
-import Briyani3 from "../../images/briyani3.jpeg"
-
 // import react icon
 import { FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
@@ -30,6 +15,7 @@ import { FaStar } from "react-icons/fa";
 import "./relatedP.css";
 const relatetedP = () => {
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const carouselRef = useRef(null);
 
   const option = {
@@ -66,7 +52,8 @@ const relatetedP = () => {
         <OwlCarousel ref={carouselRef}  className="owl-theme" {...option}>
 
           <div className="item-carousel">
-            <img src={Pizza1} alt="" />
+            
+            <img src="https://i.postimg.cc/3xWfqLXj/pizza1.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -84,7 +71,8 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Pizza2} alt="" />
+           
+            <img src="https://i.postimg.cc/B63gJNKV/pizza2.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -102,7 +90,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Pizza3} alt="" />
+            <img src="https://i.postimg.cc/J06ccLdf/pizza3.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -120,7 +108,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Pizza4} alt="" />
+            <img src="https://i.postimg.cc/BbQBK6N5/pizza4.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -138,7 +126,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Berger1} alt="" />
+            <img src="https://i.postimg.cc/cCsXBT1n/barger1.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -156,7 +144,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Berger2} alt="" />
+            <img src="https://i.postimg.cc/zfK7m4Vh/barger2.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -174,7 +162,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Berger3} alt="" />
+            <img src="https://i.postimg.cc/htHs5KPg/barger3.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -192,7 +180,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Berger4} alt="" />
+            <img src="https://i.postimg.cc/rwdgjDTQ/barger4.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -210,7 +198,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Briyani} alt="" />
+            <img src="https://i.postimg.cc/QC0S45Vn/briyani.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -228,7 +216,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Briyani1} alt="" />
+            <img src="https://i.postimg.cc/gcDM294q/briyani1.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -246,7 +234,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Briyani2} alt="" />
+            <img src="https://i.postimg.cc/VLkKS7Vy/briyani2.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>
@@ -264,7 +252,7 @@ const relatetedP = () => {
           </div>
 
           <div className="item-carousel">
-            <img src={Briyani3} alt="" />
+            <img src="https://i.postimg.cc/QxY0cp2F/briyani3.jpg" alt="" />
             <div className="price-menu">
                 <h2>Burger and Pizza!</h2>
                 <h4 className="text-green-500 text-xl">$20</h4>

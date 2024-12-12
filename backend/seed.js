@@ -1,7 +1,7 @@
 // seed.js
 require("dotenv").config();
 const mongoose = require("mongoose");
-const Item = require("./models/item"); // Import the Item model
+const Item = require("./models/item.js"); // Import the Item model
 
 // Get the MongoDB URI from the .env file
 const uri = process.env.MONGO_URI;

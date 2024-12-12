@@ -5,8 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { IoIosArrowDown} from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 
-// Image import
-import Logo from "../../images/Logo.png"
+
 
 import "./footer.css";
 const footer = () => {
@@ -34,7 +33,7 @@ const footer = () => {
         <div className="footer-content bg-slate-800">
 
           <div className="company-info">
-            <img src={Logo} className="w-40" alt="" />
+            <img src="https://i.postimg.cc/8cGGDbdC/Logo-CPs5-OF-4.png" className="w-40" alt="" />
             
             <p className="text-sm pt-2">
               Browse our menu, place your order online, and enjoy your favorite meals from the comfort of your home. Whether it’s

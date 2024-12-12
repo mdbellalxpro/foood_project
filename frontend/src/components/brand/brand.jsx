@@ -30,6 +30,7 @@ const brand = () => {
       <div className="brand-container">
         <div>
           <OwlCarousel {...options}>
+            
             <div className="item">
              <img src="https://i.ibb.co.com/SwyRKQf/barger1.jpg" alt="" />
             </div>

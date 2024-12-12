@@ -41,7 +41,8 @@
 }
 
 .nav .logo img {
-  width: 120px;
+  object-fit: cover;
+  width: 150px;
   margin-top: -20px;
 }
 
@@ -104,16 +105,19 @@
 
 /*=================== navber responsive desing ====================*/
 
-@media(max-width:1280px) {
-
-  .logo img {
-    display: none;
-  }
+@media(max-width:1250px) {
+ .logo img {
+  display: none;
+ }
 }
 
 @media(max-width:1193px) {
   .nav .car-or-account .input .count {
     top: -15px;
+  }
+
+  .logo img {
+    display: none;
   }
 
   .nav .car-or-account .responsive-nav{

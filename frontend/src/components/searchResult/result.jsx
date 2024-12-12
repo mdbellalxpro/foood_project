@@ -7,9 +7,8 @@ import "./result.css";
 import { IoSearchCircleSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 
-// import image
-import errorImage from "../../images/searcherror.png";
-
+// import image 
+ 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -69,7 +68,7 @@ const SearchBar = () => {
 
       {error && (
         <div className="error-container">
-          <img src={errorImage} alt="Error" className="error-image" />
+          <img src="https://i.postimg.cc/BQQWgbMR/9318694-removebg-preview.png" alt="Error" className="error-image" />
         </div>
       )}
 

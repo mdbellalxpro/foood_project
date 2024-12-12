@@ -112,7 +112,14 @@
   width: 300px;
 }
 
+
 /*============================ Search-Result responsive ===============*/
+
+@media (max-width:1340px) {
+  .form{
+    width: 300px;
+  }
+}
 
 @media (max-width: 768px) {
  

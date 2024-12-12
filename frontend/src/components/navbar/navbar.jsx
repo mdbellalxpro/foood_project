@@ -7,8 +7,6 @@ import { MdAccountCircle } from "react-icons/md";
 import { MdShoppingCart } from "react-icons/md";
 import { CgMenu } from "react-icons/cg";
 
-// Import Image
-import Logo from "../../images/Logo.png";
 
 // import Account component sing in or sing up perpas
 import Account from "../account/account.jsx";
@@ -46,6 +44,7 @@ const navbar = () => {
     };
   }, []);
 
+
   return (
     <>
       <div className="navbar-container">
@@ -57,7 +56,7 @@ const navbar = () => {
 
           <div className="logo">
             <Link to="/">
-              <img src={Logo} alt="" />
+              <img src="https://i.postimg.cc/8cGGDbdC/Logo-CPs5-OF-4.png" alt="" />
             </Link>
           </div>
 

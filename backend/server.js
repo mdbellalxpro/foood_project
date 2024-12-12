@@ -21,6 +21,7 @@ mongoose.connect(uri)
     console.error("Error connecting to MongoDB:", err);
 });
 
+
 // Use routes 
 app.use('/api/items', itemRoutes);
 
