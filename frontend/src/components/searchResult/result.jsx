@@ -1,4 +1,5 @@
 // src/components/SearchBar.js
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./result.css";
@@ -49,6 +50,7 @@ const SearchBar = () => {
     }, 500);
 
     return () => clearTimeout(delayDebounceFn);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
 
   return (

@@ -7,9 +7,10 @@ const productData = new mongoose.Schema({
   description: { type: String, required: true},
   price: { type: Number },
   image: { type: String, required: true},
-  rating: { type: Number,},
-  size: { type: Number},
-  weedData: { type: Number},
+  rating: { type: Number, required: true},
+  weedData: { type: String, required: true},
+  size: { type: String, required: true},
+ 
 });
 
 module.exports = mongoose.model('Item', productData);

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 
 // import react icons
 import { FaRegStar } from "react-icons/fa";
@@ -12,7 +13,9 @@ import { useParams } from 'react-router-dom';
 import "./orderPymt.css"
 const orderPymt = () => {
 
+   
   const { productId } = useParams();
+   
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
@@ -77,7 +80,7 @@ const orderPymt = () => {
               <h2>Product size!</h2>
               <div className="actuall-product flex gap-3">
                 <div className="size">
-                  <p>{product.size}</p>
+                  <p>{product.rating}</p>
                 </div>
                 <div className="size">
                     <p>20</p>
@@ -96,7 +99,7 @@ const orderPymt = () => {
 
               <div className="actuall-weet flex gap-3">
                 <div className="size">
-                    <p>{product.weedData}</p>
+                    <p>{product.rating}</p>
                 </div>
                 <div className="size">
                     <p>15</p>
